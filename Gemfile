@@ -33,8 +33,14 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Adds bootstrap sass to application
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+
+# Bootstrap JavaScript depends on jQuery. If you're using Rails 5.1+, add the jquery-rails
+gem 'jquery-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
